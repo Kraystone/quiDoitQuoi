@@ -19,9 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b225916a-13ff-4149-98c0-76f2c79b5e75" name="Default Changelist" comment="Ajouter personne a une soiree">
+    <list default="true" id="b225916a-13ff-4149-98c0-76f2c79b5e75" name="Default Changelist" comment="quelques calcul">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SoireeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SoireeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/soiree/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/soiree/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -230,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604961445738</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="quelques calcul">
+      <created>1605281634053</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605281634053</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,7 +263,8 @@
     <MESSAGE value="Ajouter personne" />
     <MESSAGE value="Ajouter personne a une soiree" />
     <MESSAGE value="new git" />
-    <option name="LAST_COMMIT_MESSAGE" value="new git" />
+    <MESSAGE value="quelques calcul" />
+    <option name="LAST_COMMIT_MESSAGE" value="quelques calcul" />
   </component>
   <component name="WindowStateProjectService">
     <state x="512" y="236" key="#Notifications" timestamp="1605272262586">
@@ -292,11 +299,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605215394888" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1605125585208">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1605281639063">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="442" y="200" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604961451752" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605125585208" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605281639063" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1605216154575">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
