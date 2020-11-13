@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Qui Doit Quoi ?{% endblock %}
+
+{% block body %}
+
+    <h3>Vous êtes sur la soirée : {{ soiree.nom }}</h3>
+
+    <table class="table">
+        <tr>
+            <th>Nom</th>
+            <th>Montant</th>
+            <th>Qui doit Quoi ?</th>
+        </tr>
+        {% for p in personne %}
+            <tr>
+                <td>{{ p.nom }}</td>
+                <td>{{ p.argent }}</td>
+                <td>#</td>
+            </tr>
+        {% endfor %}
+        <tfoot>
+        <tr>
+            <th>Total</th>
+            <td></td>
+            <td></td>
+        </tr>
+        </tfoot>
+    </table>
+    <div>
+        <a class="btn btn-warning" href="{{ path("soiree_ajouter") }}">Créer une nouvelle soirée</a>
+
+        <a class="btn btn-warning"
+           href="{{ path("soiree_ajouter_personne",{"id":soiree.id}) }}">Ajouter une personne</a>
+
+        <a class="btn btn-warning" href="{{ path("soiree_supprimer",{"id":soiree.id}) }}">Veut tu supprimer cette
+            soirée ?</a>
+    </div>
+{% endblock %}
