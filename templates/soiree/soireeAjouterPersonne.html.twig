@@ -2,7 +2,22 @@
 
 {% block body %}
     <h2>Ajouter une personne a la soirée</h2>
-    {{ form(formulaire) }}
+
+    {{ form_start(formulaire) }}
+
+    <div class="form-group">
+        <label for="">Nom de la personne</label>
+        {{ form_widget(formulaire.nom) }}
+    </div>
+
+    <div class="form-group">
+        <label for="">Montant</label>
+        {{ form_widget(formulaire.argent) }}
+    </div>
+
+    <button type="submit" class="btn btn-success">Ajouter</button>
+
+    {{ form_end(formulaire) }}
 
     <div>
         <a class="btn btn-warning" href="{{ path("soiree_index",{"id":id.id}) }}">&lt; Retour à la liste</a>

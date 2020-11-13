@@ -9,16 +9,27 @@
 }
 
 .fa, .fas {
-    color: white; !important;
+    color: white!important;
 }
 
 #nav{
     text-decoration: none;
 }
 
+nav.bg-primary{
+    background-color: #3F4253 !important;
+}
+
 h6{
     color: white; !important;
     text-decoration: none;
+}
+
+h2{
+    font-family: Georgia;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
 }
 
 div{
@@ -32,10 +43,9 @@ div{
 
 .btn-warning{
     margin: 20px;
-}
-
-.bg-primary {
+    color: white !important;
     background-color: #3F4253 !important;
+    border-color: #3F4253 !important;
 }
 
 .btn-soiree {
@@ -45,23 +55,21 @@ div{
     padding: 10px;
 }
 
-.btn-primary:hover {
-    color: #fff; !important;
-    background-color: #3F4253; !important;
-    border-color: #3F4253; !important;
+a{
+    background-color: #3F4253 !important;
 }
+
+.bg-primary {
+    background-color: #3F4253 !important;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #3F4253 !important;
+    border-color: #3F4253 !important;
+}
+
 .btn:hover {
-    color: #8a9199;
+    background-color: lightslategrey !important;
     text-decoration: none;
-}
-
-h2{
-    font-family: Georgia;
-    justify-content: center;
-    text-align: center;
-    margin: 20px;
-}
-
-.btn-inscription {
-    justify-content: center;
 }
