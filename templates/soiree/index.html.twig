@@ -16,13 +16,13 @@
             <tr>
                 <td>{{ p.nom }}</td>
                 <td>{{ p.argent }}</td>
-                <td>#</td>
+                <td>{{ totalArgent / nbPersonne - p.argent}}</td>
             </tr>
         {% endfor %}
         <tfoot>
         <tr>
             <th>Total</th>
-            <td></td>
+            <td>{{ totalArgent }}</td>
             <td></td>
         </tr>
         </tfoot>

@@ -22,15 +22,32 @@ class SoireeController extends AbstractController
     public function index(Soiree $id, Request $request)
     {
         $repo = $this->getDoctrine()->getRepository(Soiree::class);
+        $repo2 = $this->getDoctrine()->getRepository(Personne::class);
         $soiree = $repo->find($id);
 
         $personne = $soiree->getIdPersonne();
 
+        $sum = $repo2->createQueryBuilder('m')
+            ->select('sum(m.argent)')
+            //->from('personne')
+            ->where('m.id_soiree = :ID_parameter')
+            ->setParameter('ID_parameter', $id)
+            ->getQuery()
+            ->getSingleScalarResult();
 
+        $count = $repo2->createQueryBuilder('m')
+            ->select('count(m.id)')
+            //->from('personne')
+            ->where('m.id_soiree = :ID_parameter')
+            ->setParameter('ID_parameter', $id)
+            ->getQuery()
+            ->getSingleScalarResult();
 
         return $this->render('soiree/index.html.twig', [
             'soiree' => $soiree,
             "personne" => $personne,
+            'totalArgent' => $sum,
+            'nbPersonne' => $count,
         ]);
     }
 
